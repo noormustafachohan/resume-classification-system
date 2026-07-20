@@ -1,76 +1,77 @@
-# resume-classification-system
-An AI-powered Resume Classification System built with Python, Streamlit, TF-IDF, and Machine Learning that automatically categorizes PDF resumes into job domains.
+# 📄 AI Resume Classification System
 
-# 📄 Automatic CV Scanner & Resume Classifier
-
-An AI-powered Resume Classification System developed using **Python**, **Machine Learning**, and **Streamlit**.
-
-The application automatically analyzes uploaded PDF resumes, predicts their job category using a trained Machine Learning model, organizes resumes into categorized folders, and generates a downloadable CSV report.
+An AI-powered Resume Classification System built with **Python**, **Machine Learning**, and **Streamlit**. This application automatically analyzes uploaded PDF resumes, predicts their job category using a trained Machine Learning model, organizes resumes into categorized folders, and generates a downloadable CSV report.
 
 ---
 
 ## 🚀 Features
 
-- Upload multiple PDF resumes
-- Automatic text extraction from PDF files
-- Resume text preprocessing
-- TF-IDF feature extraction
-- Machine Learning-based resume classification
-- Automatically creates folders based on predicted job category
-- Saves resumes into their respective folders
-- Download prediction results as CSV
-- Simple and interactive Streamlit interface
+- 📂 Upload multiple PDF resumes simultaneously
+- 📄 Extract text from PDF resumes automatically
+- 🧹 Clean and preprocess resume text
+- 🤖 Predict resume category using a trained Machine Learning model
+- 📁 Automatically organize resumes into category-specific folders
+- 📊 Generate a downloadable CSV report of predictions
+- 🖥️ Simple and interactive Streamlit web interface
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Python
-- Streamlit
-- Scikit-learn
-- Pandas
-- Pickle
-- PyPDF
-- Regular Expressions (Regex)
+| Category | Technologies |
+|----------|--------------|
+| Programming Language | Python |
+| Framework | Streamlit |
+| Machine Learning | Scikit-learn |
+| Feature Extraction | TF-IDF Vectorizer |
+| Data Processing | Pandas |
+| PDF Processing | PyPDF |
+| Model Storage | Pickle |
+| Text Processing | Regular Expressions (Regex) |
 
 ---
 
 ## 📂 Project Structure
 
 ```
-Automatic-CV-Scanner/
+resume-classification-system/
 │
-├── app.py
-├── model.pkl
-├── tfidf.pkl
-├── requirements.txt
-├── README.md
-└── categorized_resumes/
+├── app.py                     # Main Streamlit application
+├── model.pkl                  # Trained Machine Learning model
+├── tfidf.pkl                  # TF-IDF vectorizer
+├── Resume.csv                 # Dataset used for training
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+├── LICENSE                    # MIT License
+├── .gitignore                 # Git ignore rules
+└── screenshots/
+    ├── home.png
+    └── results.png
 ```
 
 ---
 
 ## ⚙️ Installation
 
-Clone the repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/automatic-cv-scanner-ml.git
+git clone https://github.com/noormustafachohan/resume-classification-system.git
 ```
 
-Move into the project directory
+### 2. Navigate to the project folder
 
 ```bash
-cd automatic-cv-scanner-ml
+cd resume-classification-system
 ```
 
-Install dependencies
+### 3. Install required libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application
+### 4. Run the Streamlit application
 
 ```bash
 streamlit run app.py
@@ -78,24 +79,26 @@ streamlit run app.py
 
 ---
 
-## 📥 How It Works
+## 💻 How It Works
 
-1. Launch the Streamlit application.
+1. Launch the application.
 2. Upload one or more PDF resumes.
-3. Specify the output folder.
+3. Enter the output folder name (optional).
 4. Click **Categorize Resumes**.
-5. The system:
+5. The application:
    - Extracts resume text
-   - Cleans the text
-   - Converts text into TF-IDF vectors
+   - Cleans and preprocesses the text
+   - Converts text into TF-IDF feature vectors
    - Predicts the resume category
-   - Creates folders automatically
-   - Stores resumes in their predicted folders
+   - Creates category folders automatically
+   - Saves each resume into its predicted folder
 6. Download the generated CSV report.
 
 ---
 
-## 📊 Supported Categories
+## 📊 Supported Resume Categories
+
+The model can classify resumes into the following categories:
 
 - Advocate
 - Arts
@@ -127,36 +130,89 @@ streamlit run app.py
 
 ## 📷 Application Preview
 
-*(Add screenshots here)*
+### Home Screen
+
+> *(Add a screenshot here after uploading to GitHub.)*
+
+```
+screenshots/home.png
+```
+
+### Prediction Results
+
+> *(Add a screenshot here after uploading to GitHub.)*
+
+```
+screenshots/results.png
+```
 
 ---
 
-## 🎯 Future Improvements
+## 📈 Future Improvements
 
-- Resume ranking
-- Skill extraction
-- ATS score prediction
-- Experience detection
-- Education extraction
+- Resume ranking based on job requirements
+- ATS (Applicant Tracking System) compatibility score
+- Skill extraction from resumes
+- Education and experience extraction
 - Contact information extraction
 - Named Entity Recognition (NER)
 - Multi-language resume support
-- Deep Learning models (BERT, RoBERTa)
+- Deep Learning models (BERT/RoBERTa)
 - Resume recommendation system
-- Deploy on Streamlit Cloud
+- Cloud deployment
+
+---
+
+## 📋 Requirements
+
+```
+streamlit
+pandas
+numpy
+scikit-learn
+pypdf
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
 
 ---
 
 ## 👩‍💻 Author
 
-**Noor Mustafa Chohan**
+### Noor Mustafa Chohan
 
-BS Artificial Intelligence
+**BS Artificial Intelligence**  
+Pak-Austria Fachhochschule Institute of Applied Sciences and Technology (PAF-IAST), Pakistan
 
-Pakistan
+### Connect with me
+
+- GitHub: https://github.com/noormustafachohan
+- LinkedIn: https://www.linkedin.com/in/noormustafachohan/
 
 ---
 
-## ⭐ If you like this project
+## ⭐ Support
 
-Please consider giving it a ⭐ on GitHub.
+If you found this project helpful, please consider giving it a ⭐ on GitHub. It helps others discover the project and motivates future improvements.
+
+---
+
+### Project Highlights
+
+✔ Machine Learning Project
+
+✔ Streamlit Web Application
+
+✔ Resume Classification
+
+✔ Natural Language Processing (NLP)
+
+✔ PDF Text Extraction
+
+✔ Automated Resume Organization
+
+✔ CSV Report Generation
