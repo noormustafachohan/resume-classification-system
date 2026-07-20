@@ -51,6 +51,27 @@ resume-classification-system/
 
 ---
 
+## 📷 Application Preview
+
+### 🏠 Home Screen
+
+The Streamlit interface allows users to upload multiple PDF resumes, specify an output directory, and automatically classify resumes into job categories using a trained Machine Learning model.
+
+<p align="center">
+  <img src="screenshots/home.jpeg" width="900">
+</p>
+
+---
+
+### ✨ Features Demonstrated
+
+- Upload multiple PDF resumes
+- Automatic PDF text extraction
+- Resume category prediction
+- Organized output folders
+- CSV report generation
+- User-friendly Streamlit interface
+
 ## ⚙️ Installation
 
 ### 1. Clone the repository
